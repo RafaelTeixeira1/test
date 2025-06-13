@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Painel - FireApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-sA+e2Z1DRGw24E6A0Ejig22COQzj09RMwZMn+T9adHc=" crossorigin=""/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Painel</a>
+  </nav>
+  <h1>Painel</h1>
+  <div id="map"></div>
+  <h2>Novo Incêndio</h2>
+  <form id="fireForm">
+    <label>Tipo:
+      <select name="tipo">
+        <option value="vegetacao">Vegetação</option>
+        <option value="plantacao">Plantação</option>
+        <option value="pasto">Pasto</option>
+        <option value="floresta">Floresta</option>
+      </select>
+    </label>
+    <label>Gravidade:
+      <select name="gravidade">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+    </label>
+    <label>Descrição:
+      <textarea name="descricao" required></textarea>
+    </label>
+    <label>Ponto de Referência:
+      <input type="text" name="ponto">
+    </label>
+    <button type="submit">Salvar</button>
+  </form>
+  <h2>Incêndios Registrados</h2>
+  <ul id="fireList"></ul>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-+rxA/d64oYMUWORf79O8XNVbI7FF+VSsmR5Kmk1lbsw=" crossorigin=""></script>
+  <script src="app.js"></script>
+  <script>
+    initDashboard();
+  </script>
+</body>
+</html>
