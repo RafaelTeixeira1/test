@@ -1,3 +1,9 @@
+
+# Map Leaflet Example
+
+This repository contains a minimal HTML example using the [Leaflet](https://leafletjs.com/) library to display an interactive map.
+
+
 # FireApp
 
 FireApp é um sistema web desenvolvido em PHP utilizando o framework Laravel.
