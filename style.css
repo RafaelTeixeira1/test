@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+nav a { margin-right: 10px; }
+#map { height: 400px; margin-bottom: 1em; width: 100%; }
+form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 1em; }
+label { display: flex; flex-direction: column; }

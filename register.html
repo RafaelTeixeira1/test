@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Cadastro - FireApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro</h1>
+  <form id="registerForm">
+    <label>Nome:
+      <input type="text" name="name" required>
+    </label>
+    <label>E-mail:
+      <input type="email" name="email" required>
+    </label>
+    <label>Telefone:
+      <input type="text" name="phone">
+    </label>
+    <label>Tipo:
+      <select name="type">
+        <option value="cidadao">Cidadão</option>
+        <option value="bombeiro">Bombeiro</option>
+        <option value="autoridade">Autoridade</option>
+      </select>
+    </label>
+    <label>Senha:
+      <input type="password" name="password" required>
+    </label>
+    <button type="submit">Cadastrar</button>
+  </form>
+  <p>Já possui conta? <a href="login.html">Entrar</a></p>
+  <script src="app.js"></script>
+  <script>
+    initRegister();
+  </script>
+</body>
+</html>
